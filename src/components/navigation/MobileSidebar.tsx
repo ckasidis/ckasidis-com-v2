@@ -20,7 +20,7 @@ const MobileSidebar: React.FC<MobileSidebarProps> = ({
 		<Transition.Root show={sidebarOpen} as={React.Fragment}>
 			<Dialog
 				as="div"
-				className="relative z-40 md:hidden"
+				className="relative z-40 lg:hidden"
 				onClose={setSidebarOpen}
 			>
 				<Transition.Child

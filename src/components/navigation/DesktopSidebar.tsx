@@ -8,7 +8,7 @@ interface DesktopSidebarProps {
 
 const DesktopSidebar: React.FC<DesktopSidebarProps> = ({ current }) => {
 	return (
-		<div className="hidden md:fixed md:inset-y-0 md:flex md:w-64 md:flex-col">
+		<div className="hidden lg:fixed lg:inset-y-0 lg:flex lg:w-64 lg:flex-col">
 			<div className="flex flex-grow flex-col overflow-y-auto border-r border-gray-200 bg-white pt-5">
 				<div className="flex flex-shrink-0 items-center px-4">
 					<Logo />
