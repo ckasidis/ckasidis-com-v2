@@ -3,11 +3,11 @@ import { HiBars3 } from 'react-icons/hi2';
 import DesktopSidebar from './DesktopSidebar';
 import MobileSidebar from './MobileSidebar';
 
-interface LayoutProps extends PropsWithChildren {
+interface NavLayoutProps extends PropsWithChildren {
 	current?: string;
 }
 
-const Layout: React.FC<LayoutProps> = ({ current, children }) => {
+const NavLayout: React.FC<NavLayoutProps> = ({ current, children }) => {
 	const [sidebarOpen, setSidebarOpen] = useState(false);
 
 	return (
@@ -41,4 +41,4 @@ const Layout: React.FC<LayoutProps> = ({ current, children }) => {
 	);
 };
 
-export default Layout;
+export default NavLayout;

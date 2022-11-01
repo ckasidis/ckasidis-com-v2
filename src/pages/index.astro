@@ -1,12 +1,15 @@
 ---
+import NavLayout from '../components/navigation/NavLayout';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeaderSection from '../sections/HeaderSection.astro';
 ---
 
-<BaseLayout current="/">
-	<HeaderSection title="About" intro="Chantharojwong Kasidis">
-		Hi! I'm Kasidis, a passionate full stack engineer from Nanyang Technological
-		University Singapore. I enjoy building ambitious applications and exploring
-		cutting-edge technologies.
-	</HeaderSection>
+<BaseLayout>
+	<NavLayout client:load current="/">
+		<HeaderSection title="About" intro="Chantharojwong Kasidis">
+			Hi! I'm Kasidis, a passionate full stack engineer from Nanyang
+			Technological University Singapore. I enjoy building ambitious
+			applications and exploring cutting-edge technologies.
+		</HeaderSection>
+	</NavLayout>
 </BaseLayout>
