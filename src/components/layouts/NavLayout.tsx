@@ -1,7 +1,7 @@
 import { PropsWithChildren, useState } from 'react';
 import { HiBars3 } from 'react-icons/hi2';
-import DesktopSidebar from './DesktopSidebar';
-import MobileSidebar from './MobileSidebar';
+import DesktopSidebar from '../navigation/DesktopSidebar';
+import MobileSidebar from '../navigation/MobileSidebar';
 
 interface NavLayoutProps extends PropsWithChildren {
 	current?: string;
