@@ -1,15 +1,97 @@
 ---
 import NavLayout from '../components/navigation/NavLayout';
+import { socialLinks, mail } from '../data/about';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import HeaderSection from '../sections/HeaderSection.astro';
 ---
 
 <BaseLayout>
 	<NavLayout client:load current="/">
-		<HeaderSection title="About" intro="Chantharojwong Kasidis">
-			Hi! I'm Kasidis, a passionate full stack engineer from Nanyang
-			Technological University Singapore. I enjoy building ambitious
-			applications and exploring cutting-edge technologies.
-		</HeaderSection>
+		<div class="mx-auto max-w-2xl xl:max-w-5xl py-14">
+			<div
+				class="grid grid-cols-1 gap-y-16 xl:grid-cols-2 xl:grid-rows-[auto_1fr] xl:gap-y-12"
+			>
+				<div class="xl:pl-20">
+					<div class="max-w-xs px-2.5 mx-auto xl:max-w-none">
+						<img
+							src={'/profile.jpeg'}
+							alt=""
+							sizes="(min-width: 1024px) 32rem, 20rem"
+							class="aspect-square rotate-2 rounded-2xl object-cover"
+						/>
+					</div>
+				</div>
+				<div class="xl:order-first xl:row-span-2">
+					<h1 class="text-4xl font-bold tracking-tight sm:text-5xl">
+						I’m Kasidis, a full stack engineer from Thailand and Singapore.
+					</h1>
+					<div class="mt-6 space-y-7 text-gray-500">
+						<p>
+							I'm a Penultimate <strong
+								>Computer Science with a Second Major in Business</strong
+							>
+							Student at <strong>Nanyang Technological University</strong>. I
+							lived in Bangkok, Thailand, for 18 years before pursuing a
+							bachelor's degree in Singapore.
+						</p>
+						<p>
+							As a passionate <strong>full stack engineer</strong>, I enjoy
+							building ambitious applications and learning cutting-edge
+							technologies. Apart from full stack development, I'm also
+							exploring the areas of <strong
+								>DevOps, cloud, web3, and cyber security</strong
+							>. To enhance my skills and experience, I regularly build cool
+							side projects and join hackathons.
+						</p>
+						<p>
+							Before pursuing a computer science degree full-time, I was an
+							astronomy enthusiast and has won a <strong>Silver Medal</strong> from
+							the <strong
+								>13th International Olympiad on Astronomy and Astrophysics (IOAA
+								2019)</strong
+							> at Keszthely, Hungary. As a result, I have a strong mathematics and
+							data analytics background and love stargazing.
+						</p>
+						<p>
+							Outside of academics, I'm currently a Music Sub-committee at <strong
+								>NTU Piano Ensemble</strong
+							>, Marketing (Design) Officer at <strong>NTU IEEE Club</strong> and
+							Tech Director at <strong>Thai Student Society Singapore</strong>.
+							During my free time, I love playing piano, listening to music, and
+							playing sports with my friends!
+						</p>
+					</div>
+				</div>
+				<div class="xl:pl-20">
+					<ul role="list">
+						{
+							socialLinks.map((item) => (
+								<li class="flex">
+									<a
+										href={item.href}
+										target="_blank"
+										rel="noopener noreferrer"
+										class="group flex mt-5 text-sm font-medium text-gray-800 transition hover:text-primary-500"
+									>
+										<item.icon className="h-6 w-6 flex-none text-gray-800 transition group-hover:fill-primary-500" />
+										<span class="ml-4">{item.text}</span>
+									</a>
+								</li>
+							))
+						}
+						<li class="flex mt-10 border-t pt-10">
+							<a
+								href={mail.href}
+								class="group flex text-sm font-medium text-gray-800 transition hover:text-primary-500"
+							>
+								<mail.icon
+									className="h-6 w-6 flex-none text-gray-800 transition group-hover:fill-primary-500"
+								/>
+								<span class="ml-4">{mail.text}</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</NavLayout>
 </BaseLayout>
