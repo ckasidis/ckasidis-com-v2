@@ -62,7 +62,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 					</div>
 				</div>
 				<div class="xl:pl-20">
-					<ul role="list">
+					<ul class="-mt-4" role="list">
 						{
 							socialLinks.map((item) => (
 								<li class="flex">
@@ -70,7 +70,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 										href={item.href}
 										target="_blank"
 										rel="noopener noreferrer"
-										class="group flex mt-5 text-sm font-medium text-gray-800 transition hover:text-primary-500"
+										class="group flex mt-4 text-sm font-medium text-gray-800 transition hover:text-primary-500"
 									>
 										<item.icon className="h-6 w-6 flex-none text-gray-800 transition group-hover:fill-primary-500" />
 										<span class="ml-4">{item.text}</span>
@@ -78,7 +78,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 								</li>
 							))
 						}
-						<li class="flex mt-10 border-t pt-10">
+						<li class="flex mt-8 border-t pt-8">
 							<a
 								href={mail.href}
 								class="group flex text-sm font-medium text-gray-800 transition hover:text-primary-500"
