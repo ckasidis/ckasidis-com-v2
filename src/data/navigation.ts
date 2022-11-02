@@ -1,8 +1,8 @@
 import {
+	HiOutlineCheckBadge,
 	HiOutlineCodeBracket,
 	HiOutlineComputerDesktop,
 	HiOutlineDocumentText,
-	HiOutlineInbox,
 	HiOutlineUser,
 } from 'react-icons/hi2';
 
@@ -23,13 +23,13 @@ export const primaryNavItems = [
 		icon: HiOutlineComputerDesktop,
 	},
 	{
+		name: 'Awards',
+		href: '/awards',
+		icon: HiOutlineCheckBadge,
+	},
+	{
 		name: 'Resume',
 		href: '/resume',
 		icon: HiOutlineDocumentText,
-	},
-	{
-		name: 'Contact',
-		href: '/contact',
-		icon: HiOutlineInbox,
 	},
 ];
