@@ -2,6 +2,7 @@
 import BaseLayout from '../components/layouts/BaseLayout.astro';
 import NavLayout from '../components/layouts/NavLayout';
 import HeaderSection from '../components/sections/HeaderSection.astro';
+import { awards } from '../data/awards';
 ---
 
 <BaseLayout>
@@ -11,5 +12,39 @@ import HeaderSection from '../components/sections/HeaderSection.astro';
 			International Olympiad on Astronomy and Astrophysics, and 4x Gold Medalist
 			at Thailand Astronomy Olympiad.
 		</HeaderSection>
+		<section class="pt-2 pb-14 md:border-l md:border-gray-200">
+			<div class="flex max-w-3xl flex-col space-y-16">
+				{
+					awards.map((award) => (
+						<div class="md:pl-6">
+							<div class="flex max-w-3xl flex-col space-y-16">
+								<div class="md:grid md:grid-cols-4 md:items-baseline">
+									<div class="group relative flex flex-col items-start md:col-span-3">
+										<h2 class="text-base font-semibold tracking-tight">
+											{award.title}
+										</h2>
+										<p class="relative order-first mb-3 flex items-center text-sm text-gray-400 pl-3.5 md:hidden">
+											<span
+												class="absolute inset-y-0 left-0 flex items-center"
+												aria-hidden="true"
+											>
+												<span class="h-4 w-0.5 rounded-full bg-gray-200" />
+											</span>
+											{award.date}
+										</p>
+										<p class="relative mt-2 text-sm text-gray-500">
+											{award.description}
+										</p>
+									</div>
+									<p class="relative order-first mb-3 items-center text-sm text-gray-400 mt-1 hidden md:block">
+										{award.date}
+									</p>
+								</div>
+							</div>
+						</div>
+					))
+				}
+			</div>
+		</section>
 	</NavLayout>
 </BaseLayout>
