@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../components/layouts/BaseLayout.astro';
+import NavLayout from '../components/layouts/NavLayout';
+import HeaderSection from '../components/sections/HeaderSection.astro';
+---
+
+<BaseLayout>
+	<NavLayout client:load current="/award">
+		<HeaderSection title="Awards" intro="My Honors and Awards">
+			An ASEAN Undergraduate Scholar, Hackathon Runner-up, Silver Medalist at
+			International Olympiad on Astronomy and Astrophysics, and 4x Gold Medalist
+			at Thailand Astronomy Olympiad.
+		</HeaderSection>
+	</NavLayout>
+</BaseLayout>
