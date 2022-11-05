@@ -29,7 +29,8 @@ export const primaryNavItems = [
 	},
 	{
 		name: 'Resume',
-		href: '/resume',
+		href: '/Chantharojwong_Kasidis_Resume.pdf',
+		newTab: true,
 		icon: HiOutlineDocumentText,
 	},
 ];

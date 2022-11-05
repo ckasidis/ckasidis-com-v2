@@ -78,6 +78,8 @@ const MobileSidebar: React.FC<MobileSidebarProps> = ({
 										<a
 											key={item.name}
 											href={item.href}
+											target={item.newTab ? '_blank' : undefined}
+											rel={item.newTab ? 'noopener noreferrer' : undefined}
 											className={classNames(
 												item.href === current
 													? 'bg-gray-100 text-gray-900'
