@@ -1,5 +1,9 @@
 const Logo = () => {
-	return <span className="text-lg">CK</span>;
+	return (
+		<a href="/">
+			<img className="w-10 rounded-md" src="/profile.jpeg" />
+		</a>
+	);
 };
 
 export default Logo;
