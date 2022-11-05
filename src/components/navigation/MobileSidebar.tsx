@@ -1,6 +1,6 @@
 import { Dialog, Transition } from '@headlessui/react';
 import React from 'react';
-import { HiXMark } from 'react-icons/hi2';
+import { HiXMark } from 'react-icons/hi2/index';
 import { primaryNavItems } from '../../data/navigation';
 import { classNames } from '../../utils/classNames';
 import Logo from '../brand/Logo';

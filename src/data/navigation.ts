@@ -4,7 +4,7 @@ import {
 	HiOutlineComputerDesktop,
 	HiOutlineDocumentText,
 	HiOutlineUser,
-} from 'react-icons/hi2';
+} from 'react-icons/hi2/index';
 
 export const primaryNavItems = [
 	{

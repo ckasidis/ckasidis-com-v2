@@ -1,5 +1,5 @@
 import { PropsWithChildren, useState } from 'react';
-import { HiBars3 } from 'react-icons/hi2';
+import { HiBars3 } from 'react-icons/hi2/index';
 import DesktopSidebar from '../navigation/DesktopSidebar';
 import MobileSidebar from '../navigation/MobileSidebar';
 

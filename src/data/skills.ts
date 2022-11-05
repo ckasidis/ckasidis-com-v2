@@ -5,7 +5,7 @@ import {
 	SiFlutter,
 	SiGo,
 	SiReact,
-} from 'react-icons/si';
+} from 'react-icons/si/index';
 
 export const skills = [
 	{
