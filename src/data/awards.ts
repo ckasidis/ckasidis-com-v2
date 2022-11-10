@@ -24,17 +24,17 @@ export const awards = [
 	},
 	{
 		date: '2018 May',
-		title: 'Gold Medal - 16th Thailand Astronomy Olympiad',
+		title: 'Gold Medal - 15th Thailand Astronomy Olympiad',
 		description: 'Won a Gold Medal from the 15th Thailand Astronomy Olympiad.',
 	},
 	{
 		date: '2017 April',
-		title: 'Gold Medal - 16th Thailand Astronomy Olympiad',
+		title: 'Gold Medal - 14th Thailand Astronomy Olympiad',
 		description: 'Won a Gold Medal from the 14th Thailand Astronomy Olympiad.',
 	},
 	{
 		date: '2016 May',
-		title: 'Gold Medal - 16th Thailand Astronomy Olympiad',
+		title: 'Gold Medal - 13th Thailand Astronomy Olympiad',
 		description: 'Won a Gold Medal from the 13th Thailand Astronomy Olympiad.',
 	},
 ];
